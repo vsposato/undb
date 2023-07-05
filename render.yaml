@@ -4,22 +4,22 @@ services:
   - type: web
     name: undb
     env: docker
-    repo: https://github.com/undb-xyz/undb.git
-    region: singapore
+    repo: https://github.com/vsposato/undb.git
+    region: Ohio, USA
     plan: standard
     rootDir: .
     numInstances: 1
     healthCheckPath: /health
     envVars:
       - key: PUBLIC_UNDB_ADMIN_EMAIL
-        value: test@example.com
+        value: vincent.sposato@gmail.com
       - key: PUBLIC_UNDB_ADMIN_PASSWORD
-        value: 123456
+        value: D3c1s10n9148!
       - key: PUBLIC_UNDB_IS_DEMO
         value: 'true'
       - key: PUBLIC_UNDB_ANALYTICS_DOMAIN
-        value: demo.undb.xyz
+        value: undb-app.2brosdevelopment.com
       - key: UNDB_SEED
         value: 'true'
     domains:
-      - demo.undb.xyz
+      - undb-app.2brosdevelopment.com
